@@ -1,0 +1,44 @@
+*{
+    background-color: coral;
+}
+
+.head{
+    color:darkblue;
+}
+
+#bglime, h2>span{
+    background-color: lime;
+}
+
+p{
+    color:white;
+}
+
+#para{
+    color:green;
+}
+
+p span{
+    color: black;
+    font-size: 20px;
+}
+
+ul>li{
+    color:white;
+}
+
+ul li:first-child a {
+    background-color: yellow;
+}
+
+ul li:last-child a {
+    background-color: green;
+}
+
+ol li:nth-child(2){
+    color: red;
+}
+
+ol li:nth-child(3){
+    color: blue;
+}
