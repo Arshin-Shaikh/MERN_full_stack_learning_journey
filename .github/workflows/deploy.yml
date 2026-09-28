@@ -29,7 +29,7 @@ jobs:
       - name: Upload Task 1
         uses: actions/upload-pages-artifact@v4
         with:
-          path: 'C:\Users\840 g2\OneDrive\Desktop\my projects\MERN_full_stack_learning_journey\Arshin_task8'
+          path: './Arshin_task8'
 
       - name: Deploy to GitHub Pages
         id: deployment
