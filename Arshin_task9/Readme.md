@@ -64,8 +64,6 @@ The project demonstrates CSS transforms and transitions without using JavaScript
 
     - HTML5
     - CSS3
-    - CSS Media Queries
-    - CSS Pseudo-classes
     - CSS Transforms
     - CSS Transitions
     - Font Awesome
