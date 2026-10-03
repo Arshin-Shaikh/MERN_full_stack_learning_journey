@@ -1,0 +1,381 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+/* navbar*/
+.navbar{
+    display: flex;
+    width: 100%;
+    height: 12vh;
+    align-items: center;
+    z-index: 1;
+}
+/*logo part*/
+.logo{
+    width: 15%;
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    align-content:center ;
+    z-index: 2;
+}
+
+.logo img{
+    width: 90px;
+    height: auto;
+}
+
+/*nav-links*/
+.navbar-links{
+    display: flex;
+    width: 65%;
+    height: 8vh;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 1;
+}
+
+.navbar-links li{
+    
+    list-style: none;
+    padding: 0 1vw;
+   
+}
+
+.navbar-links li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.navbar-links li a:hover{
+    color: #20b8d8;
+    text-decoration: underline;
+}
+
+/*username*/
+.username{
+    width: 18%;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.username button{
+    background-color:#20a8c6;
+    color: white;
+    padding: 0 1vw;
+    height: 8vh;
+    border: 1.5px solid white;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.username button:hover{
+    background-color:#2fbdda;
+    opacity:0.85;
+    border: 1.5px solid #20b8c6;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/*humburge menu*/
+.hamburger-wrapper {
+    display: none;
+}
+
+.hamburger {
+    border: none;
+    background: transparent;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+.menu-list {
+   
+    position: absolute;
+    top: 100%;
+    right: 0;
+
+    width: 220px;
+    height: 100vh;
+
+    background-color: white;
+
+    border: 1px solid #ddd;
+    border-radius: 8px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+
+    z-index: 1000;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-15px);
+
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease,
+        visibility 0.3s ease;
+    
+}
+
+.menu-list ul {
+    list-style: none;
+}
+
+.menu-list li a {
+    display: block;
+
+    padding: 15px;
+
+    color: black;
+
+    text-decoration: none;
+}
+
+.menu-list li a:hover {
+    background-color: #20b8d8;
+    color: white;
+}
+
+.hamburger:focus + .menu-list {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/*hero section*/
+.hero-section{
+    display: flex;
+    width: 100%;
+    margin-top: 8vh;
+    justify-content: center;
+    align-items: center;
+}
+/*text part*/
+.left{
+    display: flex;
+    flex-direction: column;
+    width:50%;
+    justify-content: center;
+    padding-left: 12%;
+    z-index: 1;
+}
+
+
+h1{
+    color: #555555;
+    font-size: 3.5rem;
+}
+
+h2{
+    color:#20b8d8;
+    font-size: 1.8rem;
+}
+
+.heading{
+padding-bottom: 10px;
+}
+
+p{
+    color: grey;
+    width: 32vw;
+}
+
+/*booking button*/
+.book{
+    display: flex;
+    align-items: center;
+    padding: 6vh 0vw;
+    
+}
+/*added padding instead of width */
+.book button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 12vh;
+    padding: 0 2vw;
+    background-color: #2fbdda;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.6s ease;
+}
+.book > button:hover{
+    transform: scale(1.12) rotate(-15deg);
+}
+
+/*image part*/
+.right{
+    display: flex;
+    width:50%;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.right img{
+    width: 100%;
+    animation: orbit 2s ease-out infinite alternate;
+    z-index: 10;
+}
+
+/*animation of orbiting*/
+@keyframes orbit {
+
+  0% {
+    transform: translate(0,0) scale(1, 1);
+  }
+
+  15% {
+    
+    transform: translate(16px,0) scale(1, 1.04) ;
+  }
+
+  30% {
+    
+    transform: translate(16px,12px) scale(1, 1) ;
+  }
+
+  45% {
+    
+    transform:translate(0,12px) scale(1, 1.04);
+  }
+
+  60% {
+    
+    transform: translate(0px,0px) scale(1, 1);
+  }
+  75%{
+    transform: translate(16px,12px) scale(1, 1);
+  }
+  90% {
+    
+    transform: translate(0px,12px) scale(0.8, 1.2);
+  }
+  100%{
+    transform: translate(0px,0px) scale(1.2, 0.8);
+  }
+
+}
+
+
+
+/*responsive-media queries*/
+@media (max-width: 770px) {
+    .navbar{
+        height: 9vh;
+    }
+    .logo{
+        padding: 0px;
+        height: 9vh;
+    }
+    .logo img{
+        height: 100%;
+    }
+    .navbar-links{
+        height: 7vh;
+    }
+    .navbar-links li a{
+        font-size: 1rem
+    }
+    .navbar-links li a:hover{
+        font-size: 1.2rem
+    }
+    /* .username{
+        width: 20%;
+    } */
+    .username button{
+        width: 16vw;
+        height: 7vh;
+        font-size: 1rem;
+    }
+    h1{
+        font-size: 2.5rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    .left{
+        padding-left: 8%;
+    }
+    .book{
+        padding: 4vh 0vw;
+    }
+    .book button{
+        font-size: 1.2rem
+    }
+
+
+}
+@media (max-width: 375px){
+    .navbar-links li {
+        display: none;
+    }
+    .username {
+        width: auto;
+
+        margin-left: auto;
+        margin-right: 10px;
+    }
+
+    .username button {
+        width: 25vw;
+        height: 7vh;
+    }
+    .hamburger-wrapper {
+        display: block;
+
+        position: relative;
+    }
+    /*added transition to make it appear smoothly*/
+    .hamburger:focus + .menu-list {
+         opacity: 1;
+        visibility: visible;
+        transform: translateX(0);
+    }
+    .hero-section{
+        flex-direction: column;
+        height: 100%;
+         margin-top: 4vh;
+    }
+    .left{
+        width:85%;
+        padding-left: 0;
+        align-items: center;
+        justify-content: center;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    p{
+        width: 100%;
+    }
+    .book {
+        width: 100%;
+    }
+    .book > button:hover{
+    transform: scale(1.15) rotate(-13deg);
+    }
+    .right{
+        width: 85%;
+    }
+
+}
