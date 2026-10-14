@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CSS Mini Project - Thala7 Sneakers Store">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Arimo:ital,wght@0,400..700;1,400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+        integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS Mini Project - Thala7 Sneakers Store</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <div class="container">
+                <div class="navbar">
+                    <div class="logo">
+                        <h1>Thala<span class="blue">7.</span></h1>
+                    </div>
+                    <ul class="nav-links ">
+                        <li class="border"><a href="#Home">Home</a></li>
+                        <li class="border"><a href="#About">About</a></li>
+                        <li class="border"><a href="#Products">Products</a></li>
+                        <li class="border"><a href="#Products">More</a></li>
+                        <li class="border"><a href="#Contact">Contact</a></li>
+                    </ul>
+                    <div class="search-bar">
+                        <div class="search-icon">
+                            <i class="fa-solid fa-magnifying-glass"> </i>
+                        </div>
+                        <input type="text" placeholder="Search">
+                    </div>
+                    <div class="cart">
+                        <a href="#ShoppingCart">
+                            <i class="fa-solid fa-bag-shopping" id="bag"></i>
+                        </a>
+                        <p>0</p>
+                    </div>
+                    <div class="profile">
+                        <i class="fa-solid fa-circle-user"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero" id="Home">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="mini-brand">
+                        <h4>ѕє<span class="blue">ν</span>єη</h4>
+                        <p class="small">𝖡𝖸 𝖬.𝖲. 𝖣𝖧𝖮𝖭𝖨</p>
+                    </div>
+                    <h1>7!! Thala for a <span class="orange">Reason !</span></h1>
+                    <p class="hero-text">
+                        Discover the latest collection of sneakers from top brands. Shop now and step up your style
+                        game!
+                    </p>
+                    <a href="#products" class="btn">Shop Now</a>
+                </div>
+            </div>
+        </section>
+        <section class="stats">
+
+            <div class="stats-inner container">
+
+                <div class="stat">
+
+                    <div class="stat-icon">
+                        <i class="fa-regular fa-comments"></i>
+                    </div>
+
+                    <div>
+                        <strong>2k+</strong>
+                        <span>Reviews</span>
+                    </div>
+
+                </div>
+
+
+                <div class="stat">
+
+                    <div class="stat-icon">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+
+                    <div>
+                        <strong>30k+</strong>
+                        <span>Customers</span>
+                    </div>
+
+                </div>
+
+
+                <div class="stat">
+
+                    <div class="stat-icon">
+                        <i class="fa-solid fa-ranking-star"></i>
+                    </div>
+
+                    <div>
+                        <strong>High</strong>
+                        <span>Quality</span>
+                    </div>
+
+                </div>
+
+
+                <div class="stat">
+
+                    <div class="stat-icon">
+                        <small><i class="fa-solid fa-star"></i></small><i class="fa-regular fa-star"></i><small><i
+                                class="fa-solid fa-star"></i></small>
+                    </div>
+
+                    <div>
+                        <strong>4.5/5</strong>
+                        <span>Rating</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        <section class="Product" id="Products">
+            <div class="productContainer">
+
+                <!-- Breadcrumb -->
+                <p class="breadcrumb">
+                    Home &gt; THALA FOR A REASON &gt; Seven By M.S. Dhoni Women's Hogun Multi-Color Running Shoes
+                </p>
+
+                <!-- Main Product Display -->
+                <div class="product-display">
+
+                    <!-- Left: Main Product Image -->
+                    <div class="right-pro">
+                        <img src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?q=80&w=900&auto=format&fit=crop"
+                            alt="Seven By M.S. Dhoni multicolor running shoes" class="main-product-image">
+                    </div>
+
+                    <!-- Right: Product Details -->
+                    <div class="left-pro">
+
+                        <h2>
+                            Seven By M.S. Dhoni Women's Hogun Multi-Color Running Shoes
+                        </h2>
+
+                        <p class="description">
+                            Experience comfort and style with these multicolor running
+                            shoes. Designed with a breathable upper, cushioned midsole,
+                            and durable outsole, they provide excellent support for
+                            everyday wear and running.
+                        </p>
+
+                        <div class="rating">
+                            <span>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </span>
+                            <small>4.5 | 120 Reviews</small>
+                        </div>
+
+                        <p class="price">
+                            ₹ 3,999
+                        </p>
+
+                        <p class="discount">
+                            <strike>₹ 4,999</strike>
+                            <span class="discount-percentage">20% OFF</span>
+                        </p>
+
+                        <p class="tax-info">
+                            Inclusive of all Taxes
+                        </p>
+
+                        <!-- Quantity -->
+                        <div class="quantity-section">
+                            <label for="quantity">Quantity:</label>
+
+                            <select id="quantity" name="quantity">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+
+                        <!-- Add to Cart -->
+                        <button class="btn add-to-cart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            ADD TO CART
+                        </button>
+
+                    </div>
+                </div>
+
+                <!-- Bottom Image Gallery -->
+                <div class="gallery-section">
+
+                    <div class="related-img">
+
+                        <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?q=80&w=500&auto=format&fit=crop"
+                            alt="Running shoes side view">
+
+                        <img src="https://images.unsplash.com/photo-1600185365778-7875a359b924?q=80&w=500&auto=format&fit=crop"
+                            alt="Running shoes front view">
+
+                        <img src="https://images.unsplash.com/photo-1600185652960-c9d8869d015c?q=80&w=500&auto=format&fit=crop"
+                            alt="Running shoes detail">
+
+                        <img src="https://images.unsplash.com/photo-1662000329888-783a6954c2ea?q=80&w=500&auto=format&fit=crop"
+                            alt="Running shoes alternate view">
+
+                        <img src="https://images.unsplash.com/photo-1728724794795-681832a6afd0?q=80&w=500&auto=format&fit=crop"
+                            alt="Running shoes outsole">
+
+                        <img src="https://images.unsplash.com/photo-1637208697637-3e70c9030385?q=80&w=500&auto=format&fit=crop"
+                            alt="Running shoes rear view">
+
+                    </div>
+                </div>
+
+            </div>
+
+            <section class="shopping-cart" id="ShoppingCart">
+
+                <div class="cart-container">
+
+
+                    <h1 class="cart-heading">Shopping Cart</h1>
+
+                    <div class="cart-layout">
+
+
+                        <div class="cart-left">
+
+                            <div class="cart-table-wrapper">
+
+                                <table class="cart-table">
+
+                                    <thead>
+                                        <tr>
+                                            <th>Product</th>
+                                            <th>Quantity</th>
+                                            <th>Price</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody id="cart-items">
+
+                                        <!-- Product 1 -->
+                                        <tr class="cart-row" data-price="3999">
+
+                                            <td class="cart-product">
+                                                <div class="cart-product-info">
+
+                                                    <img src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?q=80&w=200&auto=format&fit=crop"
+                                                        alt="Seven running shoes" class="cart-product-image">
+
+                                                    <div>
+                                                        <h3>
+                                                            Seven By M.S. Dhoni Women's Hogun Shoes
+                                                        </h3>
+
+                                                        <p class="cart-product-category">
+                                                            Running Shoes
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </td>
+
+                                            <td>
+                                                <div class="quantity-control">
+
+                                                    <button type="button" class="quantity-btn decrease"
+                                                        aria-label="Decrease quantity">−</button>
+
+                                                    <span class="item-quantity">1</span>
+
+                                                    <button type="button" class="quantity-btn increase"
+                                                        aria-label="Increase quantity">+</button>
+
+                                                </div>
+                                            </td>
+
+                                            <td class="item-price">₹3,999</td>
+
+                                            <td>
+                                                <button type="button" class="remove-item" aria-label="Remove product">
+                                                    <i class="fa-solid fa-xmark"></i>
+                                                </button>
+                                            </td>
+
+                                        </tr>
+
+
+                                        <tr class="cart-row" data-price="4999">
+
+                                            <td class="cart-product">
+                                                <div class="cart-product-info">
+
+                                                    <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?q=80&w=200&auto=format&fit=crop"
+                                                        alt="Casual sneakers" class="cart-product-image">
+
+                                                    <div>
+                                                        <h3>
+                                                            Seven Men's Casual Sneakers
+                                                        </h3>
+
+                                                        <p class="cart-product-category">
+                                                            Casual Shoes
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </td>
+
+                                            <td>
+                                                <div class="quantity-control">
+
+                                                    <button type="button" class="quantity-btn decrease"
+                                                        aria-label="Decrease quantity">−</button>
+
+                                                    <span class="item-quantity">1</span>
+
+                                                    <button type="button" class="quantity-btn increase"
+                                                        aria-label="Increase quantity">+</button>
+
+                                                </div>
+                                            </td>
+
+                                            <td class="item-price">₹4,999</td>
+
+                                            <td>
+                                                <button type="button" class="remove-item" aria-label="Remove product">
+                                                    <i class="fa-solid fa-xmark"></i>
+                                                </button>
+                                            </td>
+
+                                        </tr>
+
+
+                                        <tr class="cart-row" data-price="2999">
+
+                                            <td class="cart-product">
+                                                <div class="cart-product-info">
+
+                                                    <img src="https://images.unsplash.com/photo-1600185652960-c9d8869d015c?q=80&w=200&auto=format&fit=crop"
+                                                        alt="Sport running shoes" class="cart-product-image">
+
+                                                    <div>
+                                                        <h3>
+                                                            Seven Lightweight Sports Shoes
+                                                        </h3>
+
+                                                        <p class="cart-product-category">
+                                                            Sports Shoes
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </td>
+
+                                            <td>
+                                                <div class="quantity-control">
+
+                                                    <button type="button" class="quantity-btn decrease"
+                                                        aria-label="Decrease quantity">−</button>
+
+                                                    <span class="item-quantity">1</span>
+
+                                                    <button type="button" class="quantity-btn increase"
+                                                        aria-label="Increase quantity">+</button>
+
+                                                </div>
+                                            </td>
+
+                                            <td class="item-price">₹2,999</td>
+
+                                            <td>
+                                                <button type="button" class="remove-item" aria-label="Remove product">
+                                                    <i class="fa-solid fa-xmark"></i>
+                                                </button>
+                                            </td>
+
+                                        </tr>
+
+                                    </tbody>
+
+                                </table>
+
+                            </div>
+
+                            <!-- Continue Shopping -->
+                            <div class="continue-shopping">
+
+                                <a href="#Products">
+                                    <i class="fa-solid fa-arrow-left"></i>
+                                    Continue Shopping
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Right Container: Order Summary -->
+                        <aside class="cart-right">
+
+                            <div class="order-summary">
+
+                                <h2>Order Summary</h2>
+
+                                <!-- Coupon Section -->
+                                <div class="coupon-section">
+
+                                    <label for="coupon-code">
+                                        Enter Coupon Code
+                                    </label>
+
+                                    <div class="coupon-input-group">
+
+                                        <input type="text" id="coupon-code" placeholder="Enter coupon code"
+                                            autocomplete="off">
+
+                                        <button type="button" id="apply-coupon" class="apply-coupon-btn">
+                                            Apply Coupon
+                                        </button>
+
+                                    </div>
+
+                                    <p id="coupon-message" class="coupon-message"></p>
+
+                                    <p class="coupon-hint">
+                                        Try <strong>THALA10</strong> for 10% off.
+                                    </p>
+
+                                </div>
+
+
+
+                                <div class="price-summary">
+
+                                    <div class="summary-row">
+                                        <span>Sub Total</span>
+                                        <span id="subtotal">₹11,997</span>
+                                    </div>
+
+                                    <div class="summary-row">
+                                        <span>Taxes (5%)</span>
+                                        <span id="taxes">₹600</span>
+                                    </div>
+
+                                    <div class="summary-row discount-row">
+                                        <span>Discount</span>
+                                        <span id="discount">−₹0</span>
+                                    </div>
+
+                                    <div class="summary-divider"></div>
+
+                                    <div class="summary-row total-row">
+                                        <strong>Total</strong>
+                                        <strong id="total">₹12,597</strong>
+                                    </div>
+
+                                </div>
+
+
+
+                                <button type="button" class="pay-now-btn" id="pay-now">
+                                    <span>Pay Now</span>
+                                    <span id="pay-button-total">₹12,597</span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+
+                                <!-- Payment Information -->
+                                <div class="payment-info">
+
+                                    <p>
+                                        <i class="fa-solid fa-lock"></i>
+                                        Secure Checkout
+                                    </p>
+
+                                    <div class="payment-brands">
+
+                                        <span class="secure-badge">
+                                            <i class="fa-solid fa-shield-halved"></i>
+                                            Secure
+                                        </span>
+
+                                        <span class="razorpay-brand">
+                                            <i class="fa-solid fa-bolt"></i>
+                                            Razorpay
+                                        </span>
+
+                                        <span class="verified-badge">
+                                            <i class="fa-solid fa-circle-check"></i>
+                                            Verified
+                                        </span>
+
+                                    </div>
+
+                                    <p class="payment-note">
+                                        Your payment information is protected.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </aside>
+
+                    </div>
+
+                </div>
+
+            </section>
+        </section>
+        
+        <section class="checkout-section" id="Contact">
+            <div class="checkout-container">
+
+
+                <div class="checkout-left">
+
+                    <p class="checkout-label">Checkout</p>
+
+
+                    <div class="contact-details">
+                        <h2>Contact Details</h2>
+
+                        <label for="email">Email ID</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                    </div>
+
+
+                    <div class="payment-details">
+                        <h2>Payment</h2>
+
+                        <div class="payment-methods">
+
+                            <button type="button" class="payment-option active">
+                                <i class="fa-regular fa-credit-card"></i>
+                                <span>Card</span>
+                            </button>
+
+                            <button type="button" class="payment-option">
+                                <i class="fa-brands fa-bitcoin"></i>
+                                <span>Crypto</span>
+                            </button>
+
+                            <button type="button" class="payment-option">
+                                <i class="fa-solid fa-building-columns"></i>
+                                <span>Bank</span>
+                            </button>
+
+                            <button type="button" class="payment-option more-option">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </button>
+
+                        </div>
+
+
+                        <div class="card-form">
+
+                            <div class="form-group full-width">
+                                <label for="card-number">Card Number</label>
+                                <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456"
+                                    inputmode="numeric" maxlength="19" autocomplete="cc-number">
+                            </div>
+
+                            <div class="form-row">
+
+                                <div class="form-group">
+                                    <label for="expiry">Expiry</label>
+                                    <input type="text" id="expiry" name="expiry" placeholder="MM / YY" maxlength="7"
+                                        autocomplete="cc-exp">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="cvv">CVV</label>
+                                    <input type="password" id="cvv" name="cvv" placeholder="•••" inputmode="numeric"
+                                        maxlength="4" autocomplete="cc-csc">
+                                </div>
+
+                            </div>
+
+                            <div class="form-row">
+
+                                <div class="form-group">
+                                    <label for="country">Country</label>
+                                    <select id="country" name="country">
+                                        <option value="">Select Country</option>
+                                        <option value="India">India</option>
+                                        <option value="USA">United States</option>
+                                        <option value="UK">United Kingdom</option>
+                                        <option value="Canada">Canada</option>
+                                        <option value="Australia">Australia</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="zip">ZIP Code</label>
+                                    <input type="text" id="zip" name="zip" placeholder="Enter ZIP / PIN"
+                                        autocomplete="postal-code">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <aside class="checkout-right">
+
+                    <h2>Order Summary</h2>
+
+
+                    <div class="coupon-card">
+                        <label for="coupon">Enter Coupon Code</label>
+
+                        <div class="coupon-input">
+                            <input type="text" id="coupon" name="coupon" placeholder="Enter coupon code">
+
+                            <button type="button" class="apply-coupon">
+                                Apply Coupon
+                            </button>
+                        </div>
+                    </div>
+
+
+                    <div class="price-details">
+
+                        <div class="price-row">
+                            <span>Sub Total</span>
+                            <span>₹4,700</span>
+                        </div>
+
+                        <div class="price-row">
+                            <span>Taxes (if applicable)</span>
+                            <span>₹299</span>
+                        </div>
+
+                        <div class="price-row">
+                            <span>Discount</span>
+                            <span class="discount-value">−₹0</span>
+                        </div>
+
+                        <div class="price-row total-row">
+                            <strong>Total</strong>
+                            <strong>₹4,999</strong>
+                        </div>
+
+                    </div>
+
+
+                    <button type="button" class="pay-button">
+                        Pay Now ₹4,999
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+
+                    <div class="payment-security">
+                        <span>
+                            <i class="fa-solid fa-shield-halved"></i>
+                            Secure Payment
+                        </span>
+
+                        <span class="razorpay-brand">
+                            <i class="fa-solid fa-lock"></i>
+                            Razorpay
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-check-circle"></i>
+                            Verified
+                        </span>
+                    </div>
+
+                    <p class="secure-note">
+                        Your payment information is protected.
+                    </p>
+
+                </aside>
+
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
