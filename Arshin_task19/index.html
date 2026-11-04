@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - DOM booking services miniproject</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+        integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="heading">
+        <header class="container">
+            <nav class="nav-bar">
+                <div class="logo">
+                    <img src="https://tse3.mm.bing.net/th/id/OIP.xCvTpNnSXxUkLLbFoXaHbAHaD8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                        alt="logo">
+                </div>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="btn">
+                    <button class="btn-1">username</button>
+                    <button class="btn-2"><i class="fa-solid fa-arrow-right-to-bracket"></i></button>
+                </div>
+            </nav>
+        </header>
+    </section>
+    <section class="main">
+        <div class="main-container">
+            <div class="left-container">
+                <div class="top-left">
+                    <h4>Added items</h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col">Sr No.</th>
+                                <th scope="col">Items</th>
+                                <th scope="col">Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th scope="col">Total Amount</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+                <div class="bottom-left">
+                    <h3>Book Now</h3>
+                    <p>Schedule your laundry service.</p>
+
+                    <form action="" method="get" class="form" id="bookingForm">
+
+                        <label for="name">Full Name:</label>
+                        <input type="text" name="name" id="name" placeholder="Enter your name" required />
+
+                        <label for="email">Email ID:</label>
+                        <input type="email" name="email" id="email" placeholder="Enter your email" required />
+
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" name="phone" id="phone" placeholder="Enter your phone number" maxlength="10"
+                            pattern="[0-9]{10}" title="Please enter a valid 10-digit phone number" required />
+
+                        <button type="submit" class="proceed-btn">
+                            Proceed to Checkout
+                        </button>
+                    </form>
+
+                </div>
+            </div>
+            <div class="right-container">
+                <h1>Browse Our Services</h1>
+
+                <p class="description">
+                    Click on the add to cart button to add the services to your
+                    cart and proceed to checkout.
+                </p>
+
+                <section class="items-card" id="cards">
+                    
+                </section>
+                <div class="service-buttons">
+                    <button class="skip-btn">- Skip Item</button>
+                    <button class="add-btn">+ Add Item</button>
+                </div>
+                <p class="msg"><i class="fa-solid fa-circle-exclamation"></i>Add the items to cart and Book now</p>
+            </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
