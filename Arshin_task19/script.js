@@ -1,9 +1,11 @@
+
 const skipBtn = document.querySelector('.skip-btn');
 const addBtn = document.querySelector('.add-btn');
 const cardContainer = document.getElementById('cards');
 const tableBody = document.querySelector('tbody');
-const totalAmount = document.querySelector('tfoot th:last-child');
+const totalAmount = document.getElementById('totalAmount');
 const bookingForm = document.getElementById('bookingForm');
+
 let index = 0;
 let cart = [];
 
@@ -11,80 +13,70 @@ const cards = [
     {
         Item: "Wash and fold",
         image: "image/image1.jpeg",
-        Price: "129",
+        Price: 129,
     },
     {
         Item: "Ironing",
         image: "image/image2.jpeg",
-        Price: "99",
+        Price: 99,
     },
     {
         Item: "Stream ironing",
         image: "image/image3.jpeg",
-        Price: "149",
+        Price: 149,
     },
     {
         Item: "Blanket cleaning",
         image: "image/image4.jpeg",
-        Price: "199",
+        Price: 199,
     },
     {
         Item: "Dry cleaning",
         image: "image/image5.jpeg",
-        Price: "500",
+        Price: 500,
     },
     {
         Item: "Sofa cleaning",
         image: "image/image6.jpeg",
-        Price: "999",
+        Price: 999,
     },
     {
-        Item: "shoes cleaning",
+        Item: "Shoes cleaning",
         image: "image/image7.jpeg",
-        Price: "799",
+        Price: 799,
     }
-]
+];
 
+// Display current card
 function switchCard(cards, index) {
-    // Implementation for creating cards
-    const cardContainer = document.getElementById('cards');
-    if (index < cards.length) {
-        const card = cards[index];
-        const cardElement = document.createElement('div');
-        cardElement.classList.add('card');
-        cardElement.innerHTML = `
-            <img src="${card.image}" alt="items-img">
+
+    const card = cards[index];
+
+    cardContainer.innerHTML = `
+        <div class="card">
+            <img src="${card.image}" alt="${card.Item}">
             <h2>${card.Item}</h2>
             <h2>Price: ₹${card.Price}</h2>
-        `;
-        cardContainer.innerHTML = "";
-        cardContainer.appendChild(cardElement);
-
-    }
+        </div>
+    `;
 }
 
+// Display first card
 switchCard(cards, index);
 
+// Skip current item
 skipBtn.addEventListener('click', () => {
-    if (index < cards.length - 1 ) {
-        index++;
-    } else {
+
+    index++;
+
+    if (index >= cards.length) {
         index = 0;
     }
 
     switchCard(cards, index);
 });
 
-addBtn.addEventListener('click', () => {
-    if (index < cards.length - 1 ) {
-        index++;
-    } else {
-        index = 0;
-    }
-
-    switchCard(cards, index);
-});
-
+// Add current item to cart
 addBtn.addEventListener('click', () => {
 
     const selectedItem = cards[index];
@@ -93,8 +85,17 @@ addBtn.addEventListener('click', () => {
 
     updateCart();
 
+    // Move to next card
+    index++;
+
+    if (index >= cards.length) {
+        index = 0;
+    }
+
+    switchCard(cards, index);
 });
 
+// Update cart table and total
 function updateCart() {
 
     tableBody.innerHTML = '';
@@ -103,7 +104,7 @@ function updateCart() {
 
     cart.forEach((item, i) => {
 
-        total += parseInt(item.Price);
+        total += item.Price;
 
         const row = document.createElement('tr');
 
@@ -118,19 +119,24 @@ function updateCart() {
     });
 
     totalAmount.textContent = `₹${total}`;
-
 }
 
+// Booking form submission
 bookingForm.addEventListener('submit', (event) => {
 
     event.preventDefault();
 
-    // Check form validation
     if (bookingForm.checkValidity()) {
 
-        // Open checkout page
-        window.location.href = "checkout.html";
+        if (cart.length === 0) {
+            alert("Please add at least one service to your cart!");
+            return;
+        }
 
+        // Save cart for checkout page
+        localStorage.setItem('cart', JSON.stringify(cart));
+
+        window.location.href = "checkout.html";
     }
 
 });
